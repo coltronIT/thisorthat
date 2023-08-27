@@ -1,3 +1,9 @@
-FROM thisorthatfrontend-app:base
+FROM coltronduncan/thisorthatfrontend-base
+
+COPY . .
+
+RUN npm run build
+
+EXPOSE 4173
 
 CMD ["node", "server.js"]

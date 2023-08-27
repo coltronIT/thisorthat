@@ -1,3 +1,7 @@
-FROM thisorthatfrontend-app:base
+FROM coltronduncan/thisorthatfrontend-base
+
+COPY . .
+
+EXPOSE 5173
 
 CMD ["npm", "run", "dev"]
