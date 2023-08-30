@@ -24,7 +24,7 @@ function App() {
       </div>
       <p className="read-the-docs">
         Authors (so far :0) are Ben and Colton <br />
-        Development started 8/26/2023 based of of Ben's idea
+        Development started 8/26/2023 based off of Ben's idea
       </p>
     </>
   )
