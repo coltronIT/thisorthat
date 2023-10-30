@@ -7,26 +7,17 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div id='page-wrapper'>
+      <div id='header-container'>
+        <h1>This or That</h1>
+        <h3>Description: </h3>
       </div>
-      <h1>This or That</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <div id='poll-links-container'>
+        <a id='daily-poll-link' href='' target='_blank'>Daily Poll</a>
+        <a id='random-poll-link' href='' target='_blank'>Random Poll</a>
+        <a id='past-results-link' href='' target='_blank'>Past Results</a>
       </div>
-      <p className="read-the-docs">
-        Authors (so far :0) are Ben and Colton <br />
-        Development started 8/26/2023 based off of Ben's idea
-      </p>
-    </>
+    </div>
   )
 }
 
