@@ -4,4 +4,5 @@ WORKDIR /app
 
 COPY package*.json .
 
+#TODO remove this step in the future since dev and prod do it now
 RUN npm i
