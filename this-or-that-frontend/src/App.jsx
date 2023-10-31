@@ -1,24 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Poll from './pages/Poll';
+import Results from './pages/Results';
+import Home from './pages/Home';
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <div id='page-wrapper'>
-      <div id='header-container'>
-        <h1>This or That</h1>
-        <h3>Description: </h3>
-      </div>
-      <div id='poll-links-container'>
-        <a id='daily-poll-link' href='' target='_blank'>Daily Poll</a>
-        <a id='random-poll-link' href='' target='_blank'>Random Poll</a>
-        <a id='past-results-link' href='' target='_blank'>Past Results</a>
-      </div>
-    </div>
-  )
-}
+const App = () => (
+  <Router>
+    <Routes>
+      <Route path="/poll" element={<Poll />} />
+      <Route path="/results" element={<Results />} />
+      <Route path="/" exact element={<Home />} />
+    </Routes>
+  </Router>
+)
 
-export default App
+export default App;
