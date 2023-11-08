@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Home = () => (
@@ -6,6 +5,7 @@ const Home = () => (
     <div id='header-container'>
       <h1>This or That</h1>
       <h3>Description: </h3>
+      <h4>So this is an app where you like pick this or that</h4>
     </div>
     <div id='poll-links-container'>
       <Link id='daily-poll-link' to='/poll'>Daily Poll</Link>

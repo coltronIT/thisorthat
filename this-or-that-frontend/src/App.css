@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600&display=swap');
 *,
 *::before,
 *::after {
@@ -7,41 +8,47 @@
 }
 
 :root {
-  --main-font: 'Arial', sans-serif;
+  --main-font: 'Inknut Antiqua', serif;
   color: white;
 }
 
 a {
+  color: white;
   text-decoration: none;
 }
 
 body {
-  background-color: rgb(46, 45, 45);
+  background-image: url('../undraw_coffee_re_x35h.svg');
+  background-repeat: no-repeat;
+  background-position-x: 950%;
+  background-position-y: 150%;
+  background-size: 105%;
+  background-clip: content-box;
+  background-color: rgb(46, 46, 46);
+  font-family: var(--main-font);
 }
 
 #page-wrapper {
-  border: 2px solid white;
+  background-color: rgb(46, 46, 46, 0);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
+  justify-content: space-around;
 }
 
 #header-container {
-  border: 2px solid orange;
   margin-top: 15vh;
 }
 
 #poll-links-container {
-  border: 2px solid salmon;
   height: 30vh;
-  margin-top: 25vh;
   display: grid;
   grid-template-areas:
   "daily random"
   "past past";
-  gap: 2em;
+  gap: 3em;
 }
 
 #daily-poll-link {
@@ -57,7 +64,5 @@ body {
 #past-results-link {
   text-align: center;
   grid-area: past;
-  border: 2px solid yellow;
 
 }
-
