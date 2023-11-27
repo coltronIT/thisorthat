@@ -39,8 +39,8 @@ body {
 }
 
 #header-container {
-  margin-top: 15vh;
   background-color: rgb(46, 46, 46, 65%);
+  padding: 1em;
   border-radius: 2em;
 }
 
