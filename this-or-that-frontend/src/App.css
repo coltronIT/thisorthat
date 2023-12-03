@@ -10,11 +10,7 @@
 :root {
   --main-font: 'Inknut Antiqua', serif;
   color: white;
-}
-
-a {
-  color: white;
-  text-decoration: none;
+  border: 2px solid white;
 }
 
 body {
@@ -22,20 +18,21 @@ body {
   font-family: var(--main-font);
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
 #page-wrapper {
-  background-image: url('../undraw_coffee_re_x35h.svg');
-  background-repeat: no-repeat;
-  background-position-x: -15em;
-  background-position-y: 23em;
   background-clip: border-box;
   background-color: rgb(46, 46, 46, 0);
-  min-height: 100vh;
+  min-height: 55em;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
   justify-content: space-around;
-  z-index: -2;
 }
 
 #header-container {
@@ -45,30 +42,45 @@ body {
 }
 
 #poll-links-container {
-  height: 25vh;
   display: grid;
   grid-template-areas:
   "daily random"
   "past past";
   gap: 3em;
-  background-color: rgb(46, 46, 46, 65%);
   align-items: center;
   padding: 2em;
   border-radius: 2em;
 }
 
 #daily-poll-link {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  padding: .3em;
+  border-radius: .4em;
+  background-color: rgba(46, 46, 46, 0.757);
   text-align: center;
   grid-area: daily;
 }
 
 #random-poll-link {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  padding: .3em;
+  border-radius: .4em;
+  background-color: rgba(46, 46, 46, 0.757);
   text-align: center;
   grid-area: random;
 }
 
 #past-results-link {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  padding: .3em;
+  border-radius: .4em;
+  background-color: rgba(46, 46, 46, 0.757);
   text-align: center;
   grid-area: past;
+}
 
+#main-image {
+  transform: translate(-50%, -50%);
+  z-index: -2;
+  width: 12em;
 }
