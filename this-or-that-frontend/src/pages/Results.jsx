@@ -8,7 +8,7 @@ const Results = () => (
     <div id='poll-links-container'>
       <Link id='daily-poll-link' to='/'>Daily Poll</Link>
       <Link id='random-poll-link' to='/'>Random Poll</Link>
-      <Link to='/'>Home</Link>
+      <Link id='home-link' to='/'>Home</Link>
     </div>
   </div>
 )

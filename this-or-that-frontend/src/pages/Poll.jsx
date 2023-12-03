@@ -40,7 +40,7 @@ const Poll = () => {
         )}
       </div>
       <div id='poll-links-container'>
-        <Link to='/'>Home</Link>
+        <Link id='home-link' to='/'>Home</Link>
         <Link id='past-results-link' to='/results'>Past Results</Link>
       </div>
     </div>

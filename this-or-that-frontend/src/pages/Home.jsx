@@ -9,13 +9,15 @@ const Home = () => (
         <h3>Description: </h3>
         <h4>So this is an app where you like, pick this or that</h4>
       </div>
+      <div id='image-wrapper'>
+        <MainImage/>
+      </div>
       <div id='poll-links-container'>
         <Link id='daily-poll-link' to='/poll'>Daily Poll</Link>
         <Link id='random-poll-link' to='/poll'>Random Poll</Link>
         <Link id='past-results-link' to='/results'>Past Results</Link>
       </div>
     </div>
-    <MainImage/>
   </>
 )
 

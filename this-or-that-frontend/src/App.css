@@ -10,7 +10,6 @@
 :root {
   --main-font: 'Inknut Antiqua', serif;
   color: white;
-  border: 2px solid white;
 }
 
 body {
@@ -25,14 +24,19 @@ a {
 
 
 #page-wrapper {
+  display: grid;
   background-clip: border-box;
   background-color: rgb(46, 46, 46, 0);
   min-height: 55em;
-  display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
-  justify-content: space-around;
+  justify-content: center;
+  justify-items: center;
+  grid-template-areas: 
+  "header"
+  "image"
+  "links";
 }
 
 #header-container {
@@ -61,6 +65,14 @@ a {
   grid-area: daily;
 }
 
+#home-link {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  padding: .3em;
+  border-radius: .4em;
+  background-color: rgba(46, 46, 46, 0.757);
+  text-align: center;
+}
+
 #random-poll-link {
   border: 2px solid rgba(255, 255, 255, 0.4);
   padding: .3em;
@@ -79,8 +91,21 @@ a {
   grid-area: past;
 }
 
+#image-wrapper {
+  position: relative;
+  grid-area: image;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  margin: auto;
+}
+
 #main-image {
-  transform: translate(-50%, -50%);
-  z-index: -2;
-  width: 12em;
+  position: relative;
+  border-radius: 2em;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
